@@ -37,7 +37,7 @@ docker compose up -d
 # Note: you need to be using OpenAI Python v0.27.0 for the code below to work
 import openai
 openai.api_key = api_key
-openai.api_base = "your_proxy_url" # 代理地址,入“http://www.test.com/v1”
+openai.api_base = "your_proxy_url" # 代理地址,如“http://www.test.com/v1”
 openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
   messages=[
